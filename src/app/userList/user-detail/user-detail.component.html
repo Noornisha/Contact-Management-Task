@@ -1,0 +1,81 @@
+<section class="userDetailWrapper" *ngIf="!(EmailData == '' && ContactData == '')" >
+    <div class="userInfo">
+        <div class="profileArea">
+            <img [src]="ContactData.imgPath" alt="" class="profileImage">
+            <div class="nameDetail">
+                <p>{{ContactData.firstname +' '+ ContactData.lastname}}</p>
+                <p class="grayText">{{ContactData.position}}</p>
+                <span class="msgBtn">
+                    <span class="fa-regular fa-message fa-fw"></span>
+                    Message
+                </span>
+                <span class="fa-regular fa-message fa-fw icon"></span>
+                <span class="fa-solid fa-phone-flip fa-fw icon"></span>
+                <span class="fa-solid fa-ellipsis fa-fw icon"></span>
+            </div>
+
+        </div>
+        <div class="detail">
+            <ul>
+                <li>
+                    <span class="key">Bio</span>
+                    <span class="value">When i first got into advertising</span>
+                </li>
+                <li>
+                    <span class="key">Email</span>
+                    <div class="valueWrapper" >
+                    <p class="value" *ngFor="let email of emailArray" >{{email.email}}</p>
+                    </div>
+                    <div class="lableArea">
+                        <span class="tagg">
+                            Primary</span>
+                    </div>
+                    
+                </li>
+                <li>
+                    <span class="key">Dail</span>
+                    <div class="valueWrapper">
+                    <p class="value">example@example.com</p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <span class="key">Meeting</span>
+                    <div class="valueWrapper">
+                    <p class="value">example@example.com</p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <span class="key">Phone</span>
+                    <div class="valueWrapper">
+                        <p class="value"  *ngFor="let mobile of mobileArray">{{mobile.mobile}}</p>
+
+                    </div>
+                    <div class="lableArea">
+                        <span class="tagg">
+                            Primary</span>
+                    </div>
+                    
+                </li>
+                <li>
+                    <span class="key">Social</span>
+                    <div class="valueWrapper">
+                        <span class="fa-brands fa-facebook-f fa-fw icon"></span>
+                        <span class="fa-brands fa-pinterest-p fa-fw icon"></span>
+                        <span class="fa-brands fa-twitter fa-fw icon"></span>
+                        <span class="icon fa-brands fa-linkedin fa-fw"></span>
+                        <span class="icon fa-brands fa-google fa-fw"></span>
+                    </div>
+                    
+                </li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+    </div>
+</section>
+<section *ngIf="(EmailData == '' && ContactData == '')" class="noData">
+    <h3  >Click to view Data</h3>
+</section>

@@ -1,0 +1,49 @@
+<div class="row g-0">
+    <div class="col-6 userListWrapper">
+        <header>
+            <div class="header-inner">
+                <div class="left">
+                    <span class="fa-solid fa-bars fa-fw menuIcon"></span>
+                    <span class="fw-bold">Contacts</span>
+                </div>
+                <div class="right">
+                    <span class="fa-sharp fa-solid fa-angle-left fa-fw arrow"></span>
+                    <span class="fa-sharp fa-solid fa-angle-right fa-fw fa-fw arrow"></span>
+                </div>
+            </div>
+        </header>
+        <section class="searchArea">
+            <div class="left">
+                <p class="grayText">Search for contact</p>
+                <h5>Name,Email or phone number</h5>
+            </div>
+            <div class="right">
+                <span class="fa-solid fa-magnifying-glass fa-fw"></span>
+            </div>
+        </section>
+        <div class="userList">
+            <div class="user" *ngFor="let contact of contacts; let i = index" (click)="viewDetail(contact.contactId)">
+                <div class="left">
+                    <div class="profileArea">
+                        <img class="profileImage" src="{{contact.imgPath}}" alt="profile Image">
+                        <div>
+                            <p>{{contact.firstname + ' ' + contact.lastname}}</p>
+                            <p>{{contact.position}}</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right">
+                    <span class="fa-regular fa-message fa-fw icon"></span>
+                    <span class="fa-solid fa-phone-flip fa-fw icon"></span>
+                    <span class="fa-solid fa-ellipsis fa-fw icon"></span>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-6">
+        <app-user-detail [EmailData]="emailData" [ContactData]="contactData"></app-user-detail>
+    </div>
+</div>

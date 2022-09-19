@@ -1,0 +1,119 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstname": "Noor",
+      "lastname": "Abid",
+      "position": "Project Manager",
+        "imgPath": "assets/images/istockphoto-1309328823-170667a.jpg",
+        "contactId":1
+    },
+    {
+      "id": 2,
+      "firstname": "toqeer",
+      "lastname": "Riaz",
+      "position": "Team Lead",
+      "imgPath": "assets/images/istockphoto-1309328823-170667a.jpg",
+      "contactId":2
+    },
+    {
+      "id": 3,
+      "firstname": "Huzaifa",
+      "lastname": "Tanveer",
+      "position": "Sale Manager",
+      "imgPath": "assets/images/istockphoto-1309328823-170667a.jpg",
+      "contactId":3
+    },
+    {
+      "id": 4,
+      "firstname": "Ramis",
+      "lastname": "Ali",
+      "position": "Developer",
+      "imgPath": "assets/images/istockphoto-1309328823-170667a.jpg",
+      "contactId":4
+    },
+    {
+      "id": 5,
+      "firstname": "Muhammad",
+      "lastname": "Sajid",
+      "position": "QA Manager",
+      "imgPath": "assets/images/istockphoto-1309328823-170667a.jpg",
+      "contactId":5
+    },
+    {
+      "id": 6,
+      "firstname": "Sameer",
+      "lastname": "Abdullah",
+      "position": ".Net Developer",
+      "imgPath": "assets/images/istockphoto-1309328823-170667a.jpg",
+      "contactId":6
+    }
+
+  ],
+  "email_addresses": [
+    {
+      "contactId": 1,
+      "email": [
+        "example1@example.com",
+        "abc@example.com"
+        ],
+        "mobile": [
+          "03244033301",
+          "03094525197"
+          ]
+    },
+    {
+      "contactId": 2,
+      "email": [
+        "abc@example.com",
+        "example2@example.com"
+        ],
+        "mobile": [
+          "03244033301",
+          "03094525197"
+          ]
+    },
+    {
+      "contactId": 3,
+      "email": [
+        "abc@example.com"
+        ],
+        "mobile": [
+          "03244033301"
+          ]
+    },
+    {
+      "contactId": 4,
+      "email": [
+        "example1@example.com",
+        "abc@example.com"
+        ],
+        "mobile": [
+          "03244033301",
+          "03094525197"
+          ]
+    },
+    {
+      "contactId": 5,
+      "email": [
+        "abc@example.com",
+        "example2@example.com"
+        ],
+        "mobile": [
+          "03244033301",
+          "03094525197"
+          ]
+    },
+    {
+      "contactId": 6,
+      "email": [
+        "abc@example.com"
+        ],
+        "mobile": [
+          "03094525197"
+          ]
+    }
+
+  ]
+
+}
