@@ -21,8 +21,10 @@ export class UserDetailComponent implements OnInit, OnChanges {
     this.email();
     this.mobile();
   }
-  email(){
-    let email = this.EmailData[0].email
+  email() {
+
+    var email = this.EmailData[0].email
+
     let emailArray = [];
     email.forEach(element => {
       let obj;
@@ -33,7 +35,7 @@ export class UserDetailComponent implements OnInit, OnChanges {
     this.emailArray = []
     this.emailArray = emailArray;
   }
-  mobile(){
+  mobile() {
     let mobile = this.EmailData[0].mobile
     let mobileArray = [];
     mobile.forEach(element => {

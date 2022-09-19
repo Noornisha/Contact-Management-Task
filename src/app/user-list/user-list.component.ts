@@ -13,8 +13,6 @@ export class UserListComponent implements OnInit {
   contacts: any = [];
   emailData: any = [];
   contactData: any = [];
-  // Id: any;
-  // sub: any;
   constructor(private UserService: UserServiceService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
@@ -24,7 +22,6 @@ export class UserListComponent implements OnInit {
   getContact() {
     this.UserService.getAllContacts().subscribe(data => {
       this.contacts = data;
-      console.log(this.contacts)
     }, error => console.log("Error: " + error)
     )
   }
@@ -41,7 +38,6 @@ export class UserListComponent implements OnInit {
     this.ContactEmail(id);
     this.UserService.getContact(id).subscribe(data => {
     this.contactData = data;
-    console.log(this.contactData)
     });
   }
 }
